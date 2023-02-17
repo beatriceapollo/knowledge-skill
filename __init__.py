@@ -1,4 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
+from nltk.tokenize import word_tokenize
 
 
 class Knowledge(MycroftSkill):
