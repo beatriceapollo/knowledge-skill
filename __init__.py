@@ -10,15 +10,15 @@ class Knowledge(MycroftSkill):
     def handle_knowledge(self, message):
         self.speak_dialog('knowledge')
 
-    def converse(self, utterances, lang):
-        if utterances:
-            text = utterances[0]
-            tokenized_text = word_tokenize(text)
-            tagged_text = nltk.pos_tag(tokenized_text)
-            self.speak(tagged_text)
-            return True
-        else:
-            return False
+#    def converse(self, utterances, lang):
+ #       if utterances:
+  #          text = utterances[0]
+   #         tokenized_text = word_tokenize(text)
+    #        tagged_text = nltk.pos_tag(tokenized_text)
+     #       self.speak(tagged_text)
+     #       return True
+     #   else:
+     #       return False
 
 def create_skill():
     return Knowledge()
